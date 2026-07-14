@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Madhya Pradesh</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f4f8f4;
+color:#333;
+}
+
+nav{
+background:#1b5e20;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+position:sticky;
+top:0;
+}
+
+nav h2{
+font-size:28px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#ffd54f;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+max-width:700px;
+}
+
+.hero button{
+margin-top:30px;
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:#ffd54f;
+cursor:pointer;
+transition:.3s;
+}
+
+.hero button:hover{
+transform:scale(1.1);
+}
+
+.section{
+padding:60px 40px;
+text-align:center;
+}
+
+.section h2{
+font-size:40px;
+margin-bottom:40px;
+color:#1b5e20;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:300px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+margin:15px;
+color:#1b5e20;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+
+<h2>Explore MP</h2>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Destinations</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Explore Madhya Pradesh</h1>
+
+<p>
+Discover the Heart of Incredible India with ancient temples,
+lush forests, wildlife, waterfalls, and breathtaking landscapes.
+</p>
+
+<button onclick="alert('Welcome to Madhya Pradesh Tourism!')">
+Explore Now
+</button>
+
+</section>
+
+<section class="section">
+
+<h2>Popular Destinations</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=800&q=80">
+
+<h3>Amarkantak</h3>
+
+<p>
+Origin of the sacred Narmada River, surrounded by forests,
+waterfalls and spiritual heritage.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80">
+
+<h3>Pachmarhi</h3>
+
+<p>
+Known as the Queen of Satpura, famous for hills, caves,
+waterfalls and breathtaking viewpoints.
+</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1524499982521-1ffd58dd89ea?auto=format&fit=crop&w=800&q=80">
+
+<h3>Khajuraho</h3>
+
+<p>
+A UNESCO World Heritage Site renowned for its magnificent
+temples and intricate sculptures.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Explore Madhya Pradesh</h3>
+
+<p>The Heart of Incredible India</p>
+
+<p>Created with HTML & CSS</p>
+
+</footer>
+
+</body>
+</html>
